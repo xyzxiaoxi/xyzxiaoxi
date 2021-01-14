@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Yhf3CVhKl6Y42RMB">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xyzxiaoxi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="煤气灯操纵是一种情感控制，操纵者试图让你相信你记错、误会或曲解了自己的行为和动机，从而在你的意识里播下怀疑的种子，让你变得脆弱并且困惑。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读书笔记《煤气灯效应》">
+<meta property="og:url" content="https://xyzxiaoxi.github.io/posts/d2b1426f.html">
+<meta property="og:site_name" content="熙文说">
+<meta property="og:description" content="煤气灯操纵是一种情感控制，操纵者试图让你相信你记错、误会或曲解了自己的行为和动机，从而在你的意识里播下怀疑的种子，让你变得脆弱并且困惑。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+<meta property="article:published_time" content="2021-01-07">
+<meta property="article:modified_time" content="2021-01-07">
+<meta property="article:author" content="熙文说">
+<meta property="article:tag" content="读书,编程,java,node,tars,serverless">
+<meta property="keywords" content="读书笔记,煤气灯效应,熙文说">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+
+<link rel="canonical" href="https://xyzxiaoxi.github.io/posts/d2b1426f.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>读书笔记《煤气灯效应》 | 熙文说</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">熙文说</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个人的自言自语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xyzxiaoxi.github.io/posts/d2b1426f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="熙文说">
+      <meta itemprop="description" content="分享读书笔记,关注最新的编程技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="熙文说">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          读书笔记《煤气灯效应》
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-07" itemprop="dateCreated datePublished" datetime="2021-01-07">2021-01-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">煤气灯操纵是一种情感控制，操纵者试图让你相信你记错、误会或曲解了自己的行为和动机，从而在你的意识里播下怀疑的种子，让你变得脆弱并且困惑。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="书名：《煤气灯效应：如何认清并摆脱别人对你生活的隐性控制》"><a href="#书名：《煤气灯效应：如何认清并摆脱别人对你生活的隐性控制》" class="headerlink" title="书名：《煤气灯效应：如何认清并摆脱别人对你生活的隐性控制》"></a>书名：《煤气灯效应：如何认清并摆脱别人对你生活的隐性控制》</h1><h1 id="作者：罗宾·斯特恩"><a href="#作者：罗宾·斯特恩" class="headerlink" title="作者：罗宾·斯特恩"></a>作者：罗宾·斯特恩</h1><h1 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h1><h2 id="1-煤气灯效应来源："><a href="#1-煤气灯效应来源：" class="headerlink" title="1.煤气灯效应来源："></a>1.煤气灯效应来源：</h2><p>1944 年美国拍摄了一部电影《煤气灯下》，在这部经典电影中，讲述了年轻脆弱的女歌手葆拉的故事。 葆拉嫁给了充满魅力又有些神秘的年长男子格雷戈里。但她不知道的是，她亲爱的丈夫为了侵吞她继承的遗产，一直企图把她逼疯。他不停地说她得病了、很虚弱，而且经常变换房间里的摆设，并赖到她头上。最阴险的是，他刻意操纵煤气，让她看着煤气灯莫名其妙地变暗。在丈夫邪恶计划的实施下，葆拉开始相信自己失去了理智。因为感到困惑和害怕，她变得歇斯底里，结果真的成为格雷戈里口中那个脆弱的、迷失方向的人。她陷入了一个恶性循环：越怀疑自己，就越困惑、越歇斯底里。她极度渴望获得丈夫的认可、听到他说爱她，他不但不肯，还一再表示她已然精神错乱。直到后来，一名警探向她保证他也看到了煤气灯变暗，她才一步步恢复理智和自信。<br>作者在这部电影的启发下，将这种效应称之为“煤气灯效应”。煤气灯操纵是一种情感控制，操纵者试图让你相信你记错、误会或曲解了自己的行为和动机，从而在你的意识里播下怀疑的种子，让你变得脆弱并且困惑。煤气灯操纵者可以是男性或女性、伴侣或恋人、老板或同事、父母或兄弟姐妹，他们的共同点就是让你怀疑自己对现实的认知。 煤气灯操纵总是通过两个人实现——其中一人是煤气灯操纵者，播种困惑和怀疑；另一人是被操纵者，为了能让这段关系继续，不惜怀疑自己的认知。</p>
+<h2 id="2-被煤气灯操纵-20-个报警信号"><a href="#2-被煤气灯操纵-20-个报警信号" class="headerlink" title="2.被煤气灯操纵 20 个报警信号"></a>2.被煤气灯操纵 20 个报警信号</h2><ol>
+<li>你反复质疑自己。</li>
+<li>你每天数十次地问自己：我是不是太敏感了？</li>
+<li>你经常在工作的时候感到困惑，甚至有些失去理智。</li>
+<li>你总在向父母、男友和领导道歉。</li>
+<li>你经常考虑自己是不是一个合格的女友、妻子、员工、朋友或女儿。</li>
+<li>你想不明白，为什么生活里有那么多精彩的事，你却总是不够开心。</li>
+<li>你给自己买衣服、给自己的公寓买家具，或者买其他的个人用品时，脑子里却一直考虑的是他喜欢什么，而不是自己喜欢什么。</li>
+<li>你经常在朋友和家人面前为伴侣找借口。</li>
+<li>你发现自己开始对朋友和家人隐瞒某些信息，这样你就不用再对他们解释，或者在他们面前找借口。</li>
+<li>你知道出了严重的问题，但你就是没办法表达清楚，甚至连自己也搞不清原因。</li>
+<li>为了躲避伴侣贬低你的言语和对现实的扭曲，你开始撒谎。</li>
+<li>你连简单的事都拿不定主意。</li>
+<li>你在闲谈时也要三思。</li>
+<li>在伴侣回家之前，你会先在脑子里过一遍自己这一天做错了哪些事情。</li>
+<li>你觉得自己现在和以前大不相同——以前更自信、更爱玩、更放松。</li>
+<li>你开始通过丈夫的秘书和他对话，这样你就不用直接告诉他那些可能会让他不开心的事。</li>
+<li>你觉得自己做什么都不对。</li>
+<li>你的孩子开始在你的伴侣面前保护你。</li>
+<li>你发现开始对一向相处愉快的人发火。</li>
+<li>你感到绝望，郁郁寡欢。</li>
+</ol>
+<h2 id="3-关掉煤气五种方法"><a href="#3-关掉煤气五种方法" class="headerlink" title="3.关掉煤气五种方法"></a>3.关掉煤气五种方法</h2><ol>
+<li>分清真相和曲解</li>
+<li>判断两个的对话是不是权力争夺，如果是，就退出</li>
+<li>识别你触发煤气灯操纵的行为，也识别别人的</li>
+<li>关注你的感受，而不是“对”和“错”</li>
+<li>切记，你无法控制任何人的意见－－即使你是对的！</li>
+</ol>
+<h2 id="4-远离煤气灯的长期建议"><a href="#4-远离煤气灯的长期建议" class="headerlink" title="4.远离煤气灯的长期建议"></a>4.远离煤气灯的长期建议</h2><ol>
+<li>倾听你内心的声音（花时间做白日梦、散步、反思）。</li>
+<li>写日记。</li>
+<li>坚持和你信任的朋友聊天。</li>
+<li>如果你很想投入一段煤气灯操纵式的关系，先想想你信任的导师或行为榜样会说什么。</li>
+<li>问问你自己：这位男士对我女儿、姐妹、母亲足够好吗？</li>
+<li>练习积极的自我对话。诚实地告诉自己你有哪些好的、令人钦佩的特质。</li>
+<li>通过和精神层面的连接滋养自己。留出时间祈祷、冥想，或安安静静地和心灵最深处的自我重新连接。</li>
+<li>召回你的价值观，用你推崇的方式对待他人。</li>
+<li>和肯定你精神层面的人共度时光。</li>
+<li>相信“不”已经是一句完整的话，多多使用这句话。</li>
+<li>参加某种体育运动。</li>
+<li>参加一门培养自信的课程，或领导力培训班，加强有效沟通、自我指导和谈判的技能。</li>
+<li>只做你想做的事。如果你感到矛盾，就说“不”。你会感受到坚定信念的力量。</li>
+<li>想象一下那所被栅栏包围的美丽的房子，只有你能打开大门，让别人进来。每当你觉得自己开始动摇的时候，就练习让对的人进门，而把错的人通通关在门外。请记住，你对谁能进门有完全的控制权，所以别让任何你觉得不对的人进来。向你自己保证，在这所房子里，你不会展开任何一段你觉得不妥的对话。</li>
+</ol>
+<h1 id="欢迎关注作者公众号"><a href="#欢迎关注作者公众号" class="headerlink" title="欢迎关注作者公众号"></a>欢迎关注作者公众号</h1><p><img src="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/4e25a916.html" rel="prev" title="搭建hexo博客四">
+      <i class="fa fa-chevron-left"></i> 搭建hexo博客四
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/adcffec8.html" rel="next" title="心理学实验之六恒河猴实验">
+      心理学实验之六恒河猴实验 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B9%A6%E5%90%8D%EF%BC%9A%E3%80%8A%E7%85%A4%E6%B0%94%E7%81%AF%E6%95%88%E5%BA%94%EF%BC%9A%E5%A6%82%E4%BD%95%E8%AE%A4%E6%B8%85%E5%B9%B6%E6%91%86%E8%84%B1%E5%88%AB%E4%BA%BA%E5%AF%B9%E4%BD%A0%E7%94%9F%E6%B4%BB%E7%9A%84%E9%9A%90%E6%80%A7%E6%8E%A7%E5%88%B6%E3%80%8B"><span class="nav-number">1.</span> <span class="nav-text">书名：《煤气灯效应：如何认清并摆脱别人对你生活的隐性控制》</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E8%80%85%EF%BC%9A%E7%BD%97%E5%AE%BE%C2%B7%E6%96%AF%E7%89%B9%E6%81%A9"><span class="nav-number">2.</span> <span class="nav-text">作者：罗宾·斯特恩</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9"><span class="nav-number">3.</span> <span class="nav-text">主要内容</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%85%A4%E6%B0%94%E7%81%AF%E6%95%88%E5%BA%94%E6%9D%A5%E6%BA%90%EF%BC%9A"><span class="nav-number">3.1.</span> <span class="nav-text">1.煤气灯效应来源：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%A2%AB%E7%85%A4%E6%B0%94%E7%81%AF%E6%93%8D%E7%BA%B5-20-%E4%B8%AA%E6%8A%A5%E8%AD%A6%E4%BF%A1%E5%8F%B7"><span class="nav-number">3.2.</span> <span class="nav-text">2.被煤气灯操纵 20 个报警信号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%85%B3%E6%8E%89%E7%85%A4%E6%B0%94%E4%BA%94%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-number">3.3.</span> <span class="nav-text">3.关掉煤气五种方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%BF%9C%E7%A6%BB%E7%85%A4%E6%B0%94%E7%81%AF%E7%9A%84%E9%95%BF%E6%9C%9F%E5%BB%BA%E8%AE%AE"><span class="nav-number">3.4.</span> <span class="nav-text">4.远离煤气灯的长期建议</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E4%BD%9C%E8%80%85%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="nav-number">4.</span> <span class="nav-text">欢迎关注作者公众号</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">熙文说</p>
+  <div class="site-description" itemprop="description">分享读书笔记,关注最新的编程技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">熙文说</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

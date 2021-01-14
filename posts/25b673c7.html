@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Yhf3CVhKl6Y42RMB">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xyzxiaoxi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="叛逆不是孩子的错,绝大多数孩子的叛逆是由父母引起的！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="叛逆不是孩子的错">
+<meta property="og:url" content="https://xyzxiaoxi.github.io/posts/25b673c7.html">
+<meta property="og:site_name" content="熙文说">
+<meta property="og:description" content="叛逆不是孩子的错,绝大多数孩子的叛逆是由父母引起的！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-11/1610358461371-%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210111174717.png">
+<meta property="og:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+<meta property="article:published_time" content="2021-01-11">
+<meta property="article:modified_time" content="2021-01-11">
+<meta property="article:author" content="熙文说">
+<meta property="article:tag" content="读书,编程,java,node,tars,serverless">
+<meta property="keywords" content="读书笔记,叛逆不是孩子的错,熙文说">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-11/1610358461371-%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210111174717.png">
+
+<link rel="canonical" href="https://xyzxiaoxi.github.io/posts/25b673c7.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>叛逆不是孩子的错 | 熙文说</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">熙文说</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个人的自言自语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xyzxiaoxi.github.io/posts/25b673c7.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="熙文说">
+      <meta itemprop="description" content="分享读书笔记,关注最新的编程技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="熙文说">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          叛逆不是孩子的错
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-11" itemprop="dateCreated datePublished" datetime="2021-01-11">2021-01-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%82%B2%E5%84%BF/" itemprop="url" rel="index"><span itemprop="name">育儿</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">叛逆不是孩子的错,绝大多数孩子的叛逆是由父母引起的！</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-11/1610358461371-%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210111174717.png"></p>
+<p>《叛逆不是孩子的错》的作者是杰弗里·伯恩斯坦。他是美国教育专家、心理学家、关系治疗专家，专注于儿童和家庭咨询 20 余年，曾帮助 1000 多个孩子和家庭修复关系，重获温暖的家庭生活。</p>
+<p>这本书号称十天就可以帮忙叛逆的孩子，但我觉得可能大夸张了，因为我觉得养育一个孩子不是十天的事，而是一辈子的事。这十天是十个方法，可以不断的使用来帮忙你预防或阻止孩子叛逆。</p>
+<h1 id="方法一：了解孩子为什么会叛逆"><a href="#方法一：了解孩子为什么会叛逆" class="headerlink" title="方法一：了解孩子为什么会叛逆"></a>方法一：了解孩子为什么会叛逆</h1><p>有的人会说，孩子叛逆是孩子到了青春期了，其实这个不对。经研究发现，2-3 岁时，出现的叛逆行为是人生第一个叛逆期的表现，称“宝宝叛逆期”；6-8 岁时，则来到人生第二个叛逆期，称为“儿童叛逆期”；12-18 岁时，是人生第三个叛逆期，这是大家最常见熟知的“青春叛逆期。<br>孩子为什么会叛逆？可能是以下原因：</p>
+<ol>
+<li><strong>患有反抗型叛逆症</strong>。反抗型叛逆症表现为：经常生气、为错误责怪他人、为一点小事情就大发脾气、很容易被惹恼、态度很凶狠。</li>
+<li><strong>对孩子吼叫和打骂</strong>。没有什么比吼叫和打骂更会让孩子产生叛逆行为了。当你对孩子大喊大叫，而且还大打出手时，你的情绪处于失控状态，你会把孩子当作出气筒任意发泄胸中的怒火。当我们对孩子大喊大叫或大打出手时，其实我们是在欺侮自己的孩子。</li>
+<li><strong>对孩子批评</strong>。批评意味着你对孩子的思想、体会感受、观点和他们的自我观是持否定评价的。</li>
+<li><strong>对孩子唠叨</strong>。唠叨意味着你反反复地对孩子说一些你已经说过许多遍的事情。唠叨会让孩子拒绝倾听，或变得更具有防范性，或者变得厌烦。</li>
+<li><strong>打断孩子</strong>。如果孩子觉得他们说话总是被打断，或他们没有机会说话，就可能慢慢变得不与父母进行交流了。</li>
+<li><strong>纠缠过去的冲突</strong>。喜欢翻旧账的父母，等于是一长段时间都在对孩子耿耿于怀，不能释怀。</li>
+<li><strong>引发内疚</strong>。经常用同理心的方法，让孩子觉得非常内疚，为他们的想法、他们的感受和行为而内疚。</li>
+<li><strong>挖苦</strong>。经常对孩子说口气和意思相反的话来挖苦孩子。</li>
+<li><strong>说教</strong>。总是告诉孩子应该怎么做，而不是让孩子想出具体解决办法采取行动。</li>
+<li><strong>威胁</strong>。威胁孩子，比如说“不要他了”。</li>
+<li><strong>撒谎</strong>。对孩子撒谎，不和孩子坦诚相待。</li>
+<li><strong>否认孩子的感受</strong>。当你的孩子告诉你他有什么感受时，否定了他的感受。</li>
+</ol>
+<h1 id="方法二：理解你的孩子"><a href="#方法二：理解你的孩子" class="headerlink" title="方法二：理解你的孩子"></a>方法二：理解你的孩子</h1><p>要想成为有效能的父母，关键在于为自己的孩子付出真心诚意的爱。当然，最好的示爱方式就是理解孩子。理解孩子的关键是倾听。<br><strong>如何做到真正的倾听孩子？</strong></p>
+<ol>
+<li><strong>保持目光接触</strong>。你对孩子所讲的是否感兴趣，对于孩子来说，你的眼睛是最有感染力的线索。</li>
+<li><strong>消除分心</strong>。当孩子有话要说或看起来有要开口说话的强烈愿望时，你要用全神贯注地听他说话来支持他。放下你手头的事情，面对着你的孩子，给他全身心的关注。</li>
+<li><strong>倾听时切忌开口</strong>。当孩子说话时，你最好是把打断孩子说话的情况降到最低限度。你可以微笑、点头或拍一拍孩子，以这种方式来支持鼓励孩子表达。</li>
+<li><strong>让孩子知道你在听</strong>。当孩子说完话后，你可以用稍微不同的语词重申一下他刚才所说的。</li>
+</ol>
+<p>孩子太渴望爱和被家长认可，但这中间有<strong>9 大陷阱</strong>，导致你误解孩子了</p>
+<ol>
+<li><strong>期望你的孩子能够做他并未准备好的事情</strong>。一个 5 岁的孩子不可能像 10 岁的孩子那样表现，一个 10 岁的孩子不可能像 14 岁的孩子那样表现，一个 14 岁的孩子不可能像成人那样表现。期望他们超出年龄限制的行为既不切实际，也没有什么帮助。</li>
+<li><strong>对偶尔的不良行为上纲上线</strong>。青少年有表现叛逆行为的自然倾向，当然这并不意味着他总是会叛逆。</li>
+<li><strong>阻止你的孩子表现得像个孩子</strong>。父母太容易忘记孩子到底是什么样子，从而期望孩子表现得像个小大人似的，而不是表现得像自己年龄的孩子。一个健康的孩子可能非常任性、吵闹、非常情绪化或注意力不能集中很长时间。所有这些“问题”其实并不是问题，而是正常孩子的年龄特点。</li>
+<li><strong>期望你的孩子满足你的需要</strong>。如果你跟其他大多数父母一样，你会经常期望，甚至是要求孩子满足你的需要：安静、你睡觉时不要来打扰、服从，等等。其实，作为父母的工作是满足孩子的需要，而不是反过来要孩子满足我们的需要。</li>
+<li><strong>把孩子的错误归咎于他个人</strong>。你的孩子没有什么生活经验，他不可避免会犯错误。错误在任何年龄都是学习的自然组成部分。而且，我们很容易就会责备孩子所犯的错误，而不是尝试去帮助孩子、理解孩子。</li>
+<li><strong>忘记了责备和批评会带给孩子多大的伤害</strong>。许多父母知道体罚孩子是错误的而且是有害的，但是却忘记了愤怒的语言、侮辱和责备所造成的痛苦有多大。</li>
+<li><strong>忽略了充满爱意的行为的疗效</strong>。如果你从不停下来通过拥抱并用善良温柔的语言去给孩子关爱、确信、自尊和安全感，就很容易陷入责备与不良行为的恶性循环。</li>
+<li><strong>忘记了你是孩子的学习榜样</strong>。你的孩子已经观察你好长一段时间了。不是你说的什么而是你做的什么，会让你的孩子牢记于心。一个因为孩子打人而打孩子的父母，告诉孩子打人是错误的，事实上这是在教孩子打人是正确的，至少对那些有权力的人来说是如此。</li>
+<li><strong>只看到外在行为，而没有注意到孩子内心的爱和善良动机</strong>。当孩子的行为让你非常失望时，你一定要朝好的方面想。你应该设想你的孩子非常不错，在某种条件下，在他的年龄段，他已经表现得够好了。</li>
+</ol>
+<h1 id="方法三：避免大喊大叫"><a href="#方法三：避免大喊大叫" class="headerlink" title="方法三：避免大喊大叫"></a>方法三：避免大喊大叫</h1><p>研究表明：经常采用大喊大叫的方式对孩子进行约束的父母，教育出来的孩子更有可能出现人身攻击、语言攻击和社会退缩，而且缺乏积极行为表现，比如说分享和同情。<br><strong>为什么不要大喊大叫</strong></p>
+<ul>
+<li>大喊大叫不会让你孩子的行为有所改观。</li>
+<li>大喊大叫会妨碍孩子探究和处理正在发生的事情。</li>
+<li>大喊大叫，对孩子而言，也是一种“关注”。叛逆孩子会用捣乱行为来引起你的关注，哪怕你的关注是大喊大叫，也没有什么关系。</li>
+<li>孩子会想：如果别人能够对我大喊大叫，那么我也可以对别人大喊大叫。</li>
+<li>大喊大叫会让孩子对你产生恐惧心理。</li>
+<li>被大喊大叫的孩子会学会以同样的方式来回应你。</li>
+<li>你大喊大叫得越多，你的叛逆孩子就越不会听你的。</li>
+<li>你的大喊大叫向孩子传递着这样的信息：你像个疯子一样在对他。</li>
+<li>大喊大叫降低了孩子对你的信任，他不会再把你作为一个可以敞开心扉的安全对象。</li>
+</ul>
+<h1 id="方法四：避免权力争夺"><a href="#方法四：避免权力争夺" class="headerlink" title="方法四：避免权力争夺"></a>方法四：避免权力争夺</h1><p>权力争夺之所以会发生，一般是因为你的孩子（也极有可能是你自己）感觉没有权力，想要感受到更多的控制感。权力争夺事实上是你的孩子（也可能又是你自己）试图弥补自己的无能感。<br><strong>避免权力之争的 16 个秘诀</strong></p>
+<ol>
+<li>想一想“预防”。关注什么可以让你的孩子平静下来。在平静的时候，你试着和你的孩子讨论这些困境，请求他想办法解决这些问题。</li>
+<li>注意时间和过渡。在完成计划或执行行动时，注意时间安排和剩余时间。</li>
+<li>观察你在做什么示范。</li>
+<li>一直坚持你的界限。比你说“不”然后一点也不能让步，更能给你的孩子截然不同的期望。</li>
+<li>说出你的想法后就走开。</li>
+<li>有礼节地提出要求。当你的孩子习惯于你用命令的口气和不太礼貌的方式跟他说话时，用礼貌的方式对他提出要求就会特别管用。</li>
+<li>想一想“妥协”。当你看到一场权力争夺已开始时，你告诉孩子：“我真的希望我们能尽可能达成一致，这样我们都会感觉挺好。”</li>
+<li>避免负面标签。要想办法把负面标签转化成更加积极的标签。</li>
+<li>顾及你自己的自信心和自尊心。</li>
+<li>运用幽默。</li>
+<li>用恰当方式向孩子表达他有权力。</li>
+<li>记住少说为妙。</li>
+<li>给予选择并要求选择。 如果你的孩子公开提出无理的要求，用冷静坚决而且非控制的方式告诉他，他有多种选择。选择让你的孩子感觉有权力感。</li>
+<li>说“我理解，但是…</li>
+<li>给你的孩子赋权。千万别害怕教你的孩子用尊重的方式对你说“不”。你的孩子有权利表达不同的意见和作出不同的选择。关键是要教你的孩子懂得，说“不”并不必然要最终达成妥协。</li>
+<li>不是每件事都会引发权力之争。不要把孩子的所有行为都看成挑战你权威的反叛行为。</li>
+</ol>
+<h1 id="方法五：加强孩子的积极转变"><a href="#方法五：加强孩子的积极转变" class="headerlink" title="方法五：加强孩子的积极转变"></a>方法五：加强孩子的积极转变</h1><p>无论是年轻还是年长，我们都是快乐的追求者。当你的孩子做一些令人愉快的事情时，不管你对他们的积极行为给予的是一个微笑、一句称赞还是一个拥抱，这个奖励都会让他觉得很开心。通过给予奖励来加强孩子以后的行为，这样一个过程叫作“正强化”。这是一个有效的手段，几乎可以产生立竿见影的效果，进而鼓励那些叛逆的孩子想要变得更好，或者更加合作。</p>
+<p><strong>怎样表扬你的孩子？</strong></p>
+<ol>
+<li><strong>表扬时的态度要真诚</strong>。当你的表扬非常具体时，会使孩子觉得真诚而有力。</li>
+<li><strong>表扬要适可而止</strong>。为了避免孩子觉得你很虚伪，你对孩子作出了积极评价后就不要再提此事。</li>
+<li><strong>表扬要体现对比</strong>。让你的孩子准确地知道：他现在做的跟以前不一样，为什么现在这样做非常有益而且很重要。</li>
+<li><strong>表扬越快越好</strong>。试着在看到孩子好的行为后，就尽快对他进行表扬。拖得越迟，你通过表扬激励孩子表现令人惬意的行为的动机就越弱。</li>
+<li><strong>表扬要多样化和见机进行</strong>。避免每次表扬都说同样的话。尝试一下其他形式的口头表扬，这会使得它们更有吸引力。</li>
+<li><strong>不要吝啬表扬</strong>。只要表扬是发自内心的而不是心不在焉的，在孩子积极的行为上无论怎么表扬都不过分。</li>
+</ol>
+<h1 id="方法六：依靠纪律约束"><a href="#方法六：依靠纪律约束" class="headerlink" title="方法六：依靠纪律约束"></a>方法六：依靠纪律约束</h1><p>纪律（discipline）这个词来源于“disciple”，意思是教学。为了有效地动用纪律约束方法，你必须把它当作一种教育和支持你孩子的方法<br><strong>六个更加有效的纪律秘诀</strong></p>
+<ul>
+<li><strong>以身作则</strong>。你是孩子的榜样。比如，你要教育孩子，强硬的态度解决不了冲突和问题，那么你自己就别太严厉。</li>
+<li><strong>设定限制，但别强加太多的规则</strong>。在制定规则之前，问一问你自己：这有必要吗？这个规则有益于孩子的健康和安全吗？它能保护其他人的权利和财产吗？</li>
+<li><strong>在制定家庭规则时尽可能让孩子多参与</strong>。孩子更愿意遵守他们参与过制定过程的规则。</li>
+<li><strong>帮助孩子理解规则以及破坏规则的后果</strong>。如果你和你 7 岁的孩子都同意了不能在街上游荡的规则，那么如果他打破了规则，就让他准备好承受后果。</li>
+<li><strong>私下给予回应</strong>。让一个孩子在其他人面前感到尴尬会让他产生不必要的愤怒，伤害他的尊严和自尊心。所以说，孩子出问题时先要避开他人进行处理。</li>
+<li><strong>告诉你的孩子你多么爱他</strong>。当他们作出错误行为时，告诉他们你不喜欢的是他们的行为，而不是他们本人！</li>
+</ul>
+<h1 id="方法七：调动家人的支持"><a href="#方法七：调动家人的支持" class="headerlink" title="方法七：调动家人的支持"></a>方法七：调动家人的支持</h1><p>一个家庭主要是父母和孩子之间的伙伴关系，他们有不同的性格和需求，但所有人却在一起跳同一支舞。家庭是一个舞台，每个家庭成员都是演员，大家在这个舞台上配合得默契与否，直接影响着家庭之舞的质量。</p>
+<ul>
+<li>花点时间和你的其他孩子想一想如何支持那个叛逆孩子。帮助你的孩子认识到，与你的叛逆孩子一起分享美好的时光，他就会多些包容、少些叛逆，也就会更少通过惹是生非来引起别人的注意。</li>
+<li>父母尽可能多地设置了合作任务，并教孩子学会合作而不是相互竞争。在一种自然而然的轻松自如环境中，建立“操作合作”对孩子的成功真的非常重要。</li>
+<li>应该让兄弟姐妹理解，叛逆孩子存在比较大的情绪控制问题，需要父母的帮助才能渡过难关。</li>
+<li>孩子们喜欢家庭聚会，一般不会轻易违反规则。家庭仪式能给家人提供一种安全感。家庭聚会是指全家人一起精心参与的活动。无论是什么活动，你的整个家庭成员都必须对它予以重视。无论做什么，保持其常规性是最重要的。</li>
+<li>许多兄弟姐妹喜欢一起分享美好时光。让孩子回忆过去一起度过的美好时光，有助于他们重归于好。</li>
+<li>确保你的每个孩子都有充足的时间和空间。孩子们需要有做他们自己的事情的机会。他们喜欢没有兄弟姐妹的干扰，同自己的朋友一起玩耍，他们需要有自己的私人空间、希望私有财物能受到保护。</li>
+<li>尽可能为所有孩子提供与你单独相处的时间</li>
+<li>最最重要的是，夫妻关系应该放到亲子关系前面。</li>
+</ul>
+<h1 id="方法八：减少孩子在学校的叛逆行为"><a href="#方法八：减少孩子在学校的叛逆行为" class="headerlink" title="方法八：减少孩子在学校的叛逆行为"></a>方法八：减少孩子在学校的叛逆行为</h1><ol>
+<li>告诉老师，她需要了解你的孩子哪些方面</li>
+<li>表扬老师</li>
+<li>支持学校工作而不恼火</li>
+<li>充分利用家长会，和老师谈论孩子的学习、才能、技巧、爱好、学习习惯、叛逆等各个方面。</li>
+<li>回家后，记得告诉孩子老师对他予以肯定的一些事情。</li>
+</ol>
+<h1 id="方法九：克服顽固性障碍"><a href="#方法九：克服顽固性障碍" class="headerlink" title="方法九：克服顽固性障碍"></a>方法九：克服顽固性障碍</h1><ol>
+<li>如果你怀疑你的孩子有顽固性障碍，比如注意力缺失多动症、抑郁症、阿斯伯格综合症等，那么教他一些心理健康的知识，是非常重要的</li>
+<li>对于一些一直存在的问题，请咨询有相关资质的心理健康专家</li>
+<li>只要你有耐心，而且很有坚持力，光明的日子就在前力</li>
+</ol>
+<h1 id="方法十：从长远减少叛逆行为"><a href="#方法十：从长远减少叛逆行为" class="headerlink" title="方法十：从长远减少叛逆行为"></a>方法十：从长远减少叛逆行为</h1><ol>
+<li>提醒自己到目前为止作出的所有积极改变</li>
+<li>记住，你正在继续努力做一个坚强的父母。</li>
+<li>如果你情绪失控了，要向孩子道歉。</li>
+<li>如果有必要，跟你的朋友或者受过专业培训的精神治疗专家聊天，归纳出形成问题、产生不良后果的家长行为或糟糕决定的原因。</li>
+</ol>
+<h1 id="欢迎关注作者公众号"><a href="#欢迎关注作者公众号" class="headerlink" title="欢迎关注作者公众号"></a>欢迎关注作者公众号</h1><p><img src="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/6e472a22.html" rel="prev" title="心理学实验之九从众心理实验">
+      <i class="fa fa-chevron-left"></i> 心理学实验之九从众心理实验
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/2c71dda9.html" rel="next" title="心理学实验之十贴标签实验">
+      心理学实验之十贴标签实验 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BA%86%E8%A7%A3%E5%AD%A9%E5%AD%90%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%8F%9B%E9%80%86"><span class="nav-number">1.</span> <span class="nav-text">方法一：了解孩子为什么会叛逆</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E7%90%86%E8%A7%A3%E4%BD%A0%E7%9A%84%E5%AD%A9%E5%AD%90"><span class="nav-number">2.</span> <span class="nav-text">方法二：理解你的孩子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%89%EF%BC%9A%E9%81%BF%E5%85%8D%E5%A4%A7%E5%96%8A%E5%A4%A7%E5%8F%AB"><span class="nav-number">3.</span> <span class="nav-text">方法三：避免大喊大叫</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E5%9B%9B%EF%BC%9A%E9%81%BF%E5%85%8D%E6%9D%83%E5%8A%9B%E4%BA%89%E5%A4%BA"><span class="nav-number">4.</span> <span class="nav-text">方法四：避免权力争夺</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%94%EF%BC%9A%E5%8A%A0%E5%BC%BA%E5%AD%A9%E5%AD%90%E7%9A%84%E7%A7%AF%E6%9E%81%E8%BD%AC%E5%8F%98"><span class="nav-number">5.</span> <span class="nav-text">方法五：加强孩子的积极转变</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E5%85%AD%EF%BC%9A%E4%BE%9D%E9%9D%A0%E7%BA%AA%E5%BE%8B%E7%BA%A6%E6%9D%9F"><span class="nav-number">6.</span> <span class="nav-text">方法六：依靠纪律约束</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%83%EF%BC%9A%E8%B0%83%E5%8A%A8%E5%AE%B6%E4%BA%BA%E7%9A%84%E6%94%AF%E6%8C%81"><span class="nav-number">7.</span> <span class="nav-text">方法七：调动家人的支持</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E5%85%AB%EF%BC%9A%E5%87%8F%E5%B0%91%E5%AD%A9%E5%AD%90%E5%9C%A8%E5%AD%A6%E6%A0%A1%E7%9A%84%E5%8F%9B%E9%80%86%E8%A1%8C%E4%B8%BA"><span class="nav-number">8.</span> <span class="nav-text">方法八：减少孩子在学校的叛逆行为</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B9%9D%EF%BC%9A%E5%85%8B%E6%9C%8D%E9%A1%BD%E5%9B%BA%E6%80%A7%E9%9A%9C%E7%A2%8D"><span class="nav-number">9.</span> <span class="nav-text">方法九：克服顽固性障碍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E5%8D%81%EF%BC%9A%E4%BB%8E%E9%95%BF%E8%BF%9C%E5%87%8F%E5%B0%91%E5%8F%9B%E9%80%86%E8%A1%8C%E4%B8%BA"><span class="nav-number">10.</span> <span class="nav-text">方法十：从长远减少叛逆行为</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E4%BD%9C%E8%80%85%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="nav-number">11.</span> <span class="nav-text">欢迎关注作者公众号</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">熙文说</p>
+  <div class="site-description" itemprop="description">分享读书笔记,关注最新的编程技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">熙文说</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

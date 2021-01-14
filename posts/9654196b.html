@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Yhf3CVhKl6Y42RMB">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xyzxiaoxi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="思维的囚徒,活出生命的意义,读书笔记。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读书笔记《思维的囚徒》">
+<meta property="og:url" content="https://xyzxiaoxi.github.io/posts/9654196b.html">
+<meta property="og:site_name" content="熙文说">
+<meta property="og:description" content="思维的囚徒,活出生命的意义,读书笔记。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+<meta property="article:published_time" content="2021-01-07">
+<meta property="article:modified_time" content="2021-01-07">
+<meta property="article:author" content="熙文说">
+<meta property="article:tag" content="读书,编程,java,node,tars,serverless">
+<meta property="keywords" content="读书笔记,思维的囚徒,熙文说">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+
+<link rel="canonical" href="https://xyzxiaoxi.github.io/posts/9654196b.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>读书笔记《思维的囚徒》 | 熙文说</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">熙文说</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个人的自言自语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xyzxiaoxi.github.io/posts/9654196b.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="熙文说">
+      <meta itemprop="description" content="分享读书笔记,关注最新的编程技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="熙文说">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          读书笔记《思维的囚徒》
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-07" itemprop="dateCreated datePublished" datetime="2021-01-07">2021-01-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">思维的囚徒,活出生命的意义,读书笔记。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>《思维的囚徒》作者是亚历克斯·佩塔克斯和伊莱恩·丹顿。这本书是《活出生命的意义》的总结，提出了7个原则。这七个原则：自由地选择你的态度，实现有意义的目标，发现生命瞬间的意义，千万不要违心做事，从远处审视自己，改变你的关注焦点和敢于超越自己。</p>
+<a id="more"></a>
+
+<p>这里介绍一下《活出生命的意义》这本书，它的作者是维克多·弗兰克尔，这本书被美国国会图书馆认定为美国十大最有影响力的书之一。弗兰克尔1905年3月26日出生在奥地利维也纳。那一天也是贝多芬去世的日子。他十六岁就做了人生第一场公开演讲，演讲题目为“生命的意义”。两年后，他高中毕业，撰写的毕业论文是《谈哲学思想心理学》。1924年，应弗洛伊德的邀请，弗兰克尔在《国际精神分析杂志》上发表了第一篇论文，他当时才十九岁。同年，他与当时著名的精神病学家阿尔弗雷德·阿德勒成了好朋友，并在3年后又在著名的《国际个体心理学杂志》上发表了另一篇文章。1942年9月，弗兰克尔和他的家人被捕，后来他们被押送到了布拉格附近的特莱西恩施塔特集中营。在此期间，弗兰克尔的妻子蒂莉、父母和弟弟都因为无法忍受纳粹集中营的恐怖生活相继离世。第二次世界大战结束后，弗兰克尔被集中营释放，他把自己在集中营的经历写成了一本书，书名就是《活出生命的意义》。他在书中写道：生活的艰难和困苦可以剥夺人类的其他一切，但唯独剥夺不了人类最后的一点儿自由，即人类无论在何种境况下都有选择处世态度的自由和选择自己行为方式的自由。</p>
+<h2 id="原则一、自由地选择你的态度"><a href="#原则一、自由地选择你的态度" class="headerlink" title="原则一、自由地选择你的态度"></a>原则一、自由地选择你的态度</h2><p>什么叫“自由地选择你的态度”？也许有人会问：即然我已经有了态度，为何要选择态度？弗兰克尔说：人类不可能不受条件或形势的制约。但重要的是，我们可以选择如何应对，我们至少可以选择应对的态度。他建议要选择积极乐观的态度，通过释放积极态度，我们就能释放能量，从而与别人建立更有意义的联系。当我们与别人真正建立了深层人际关系之后，我们就创造了一个互相扶持、潜力无限的新型共同体。如果我们建立了这种真实的联系，就肯定能找到意义。意义等着我们去发现，而不是创造出来的。</p>
+<p>如果我们选择积极乐观的态度，那么实际上我们做了三个选择：1.我们选择了积极的态度来应对当前的境况。2.我们选择对可能发生的事情创造性地进行设想。3.我们选择的态度激发了我们采取行动的热情，将可能变成现实。</p>
+<h3 id="那么如何保持积极乐观的态度呢？"><a href="#那么如何保持积极乐观的态度呢？" class="headerlink" title="那么如何保持积极乐观的态度呢？"></a>那么如何保持积极乐观的态度呢？</h3><p>书中介绍了一个“十大积极结果练习”。如果你遇到压力很大、情绪很消极、非常具有挑战性的生活或工作状态。写下这种状态可能会为你带来或已经带来的十个积极结果。把你想到的东西都写下来，不用考虑现实或它是否能被社会接受。能超过十个更好，写得越多越好。你可以自由地界定什么对你来说是“积极的”结果。写完了积极结果清单之后，认真地看一下，思考如何让这些结果变成现实。这需要你放弃当前闭塞或陈旧的思维方式，摆脱失望或绝望，甚至消除愤怒。不管你的个人境况如何艰难，这个练习都能帮你变得更加乐观。</p>
+<h2 id="原则二、实现有意义的目标"><a href="#原则二、实现有意义的目标" class="headerlink" title="原则二、实现有意义的目标"></a>原则二、实现有意义的目标</h2><p>如何实现有意义的目标？弗兰克尔说问问你的内心。我们不管遇到什么问题或挑战，都不能坐以待毙，不能等着解决方法自己奇迹般地出现，而是应该积极参与寻找，成为解决方法的一部分。成为解决方法的一部分就意味着采取行动。你的梦想可能十分美好，生动真实，但采取行动要求你不仅要有梦想，而且要付诸行动。但我们采取行动时，总会遇到很多的无奈和挫折，这是自然而然的事情，有时也不一定会一帆风顺地安然度过。采取行动需要我们心甘情愿，真正恪守承诺，沿着自我探索的道路追寻意义。遗憾的是，我们经常错失良机，无法充分利用自身宽广的内心世界，感受生活和工作的真正意义。</p>
+<p>弗兰克尔说，只要我们保持清醒的意识，恪守对有意义的价值观和目标的承诺，我们就能充分享受这种宽广的感觉。当然，人生最困难的事情莫过于认识自己。我们需要花点儿时间和精力来质疑、反思和真正地认识我们是谁，而不是成为别人希望的样子。我们需要花点儿时间和精力来了解自己的长处和才能，利用它们来帮助别人。我们需要花点儿时间与精力来了解什么能让我们的生活有意义。追寻意义要求我们接受迷宫的挑战，敢于冒险。</p>
+<p>归根结底，只有走进内心，实现我们的意义意志，也就是真正恪守承诺，去实现只有我们自己才能实现的有意义的价值观和目标，我们才能发现人类的独特性，在生活和工作中充分发挥自己的潜力。</p>
+<h3 id="如何发现有意义的目标？"><a href="#如何发现有意义的目标？" class="headerlink" title="如何发现有意义的目标？"></a>如何发现有意义的目标？</h3><p>书中介绍了“山脉练习”。步骤就是把你的生活（特别是工作生活）看作有山峰和峡谷的风景。哪些人和事对你的影响最大？把它们标记在山顶上。哪些人和事对你阻碍最大或对你最不尊重？把它们标记在峡谷中。现在回顾一下，总结山顶上那些人各有什么特点。这些人和事中哪些是最有意义的？哪些是交流中反复出现的主题和价值观？你是如何学习这些主题和价值观并把它们融入自己的生活的？现在回顾一下在峡谷反复出现的主题和价值观。你从这些经历或这些人身上学到了什么？这个练习可以帮助你从一个不同的角度来重新审视你的生活和工作。通过这个练习，你可以发现反复出现的价值观，认识自己的独特性，拓宽自己的视野，加深自己对工作和生活的认识。</p>
+<h2 id="原则三、发现生命瞬间的意义"><a href="#原则三、发现生命瞬间的意义" class="headerlink" title="原则三、发现生命瞬间的意义"></a>原则三、发现生命瞬间的意义</h2><p>生命的意义本身并不重要，重要的是在你的生活中去寻找意义。意义对每个人来说都不尽相同。不存在绝对的正确答案，只有适合你的答案。</p>
+<p>我们无法创造意义，意义需要我们去发现。当然，如果不去寻找意义，肯定就发现不了意义。意义会以各种不同的形式出现。有时它在我们的生活中赫然出现，显得举足轻重，有时在几乎无人察觉的情况下悄无声息地进入我们的生活。我们可能会错失发现意义的良机。直到过了数日、数月，甚至数年以后，事实证明，曾经看似微不足道的某个瞬间却是改变我们一生的关键时刻。</p>
+<p>人生的意义是什么是一个很难回答的大问题，但如果我们找到了生活中的小问题的答案，这个大问题就会迎刃而解。我们的一生都有丰富的意义，我们所做的一切事情都有意义。花点儿时间反思每一个生命瞬间的意义，这是让我们最终获取个人整个生命的深层意义的第一步。</p>
+<h3 id="如何发现生命瞬间意义？"><a href="#如何发现生命瞬间意义？" class="headerlink" title="如何发现生命瞬间意义？"></a>如何发现生命瞬间意义？</h3><p>书中介绍一个简单方法“存在意义挖掘练习”。无论什么时候，只要你处于某种特别具有挑战的情境中，或者你认为它是你个人生活或工作生活中十分重要的时刻，就问问自己下面这些问题：1. 你是如何应对当时的情境或生活的？你是怎么做的？怎么想的？2. 你当时有何感受？产生了哪些情绪？3. 你从中学到了什么？学到了什么新知识和技巧？态度有了什么变化？4. 你将如何从经历中成长？你将如何把自己学到的东西，特别是对自己的主要认识应用到个人成长中？</p>
+<h3 id="如何反思你的生命瞬间的意义？"><a href="#如何反思你的生命瞬间的意义？" class="headerlink" title="如何反思你的生命瞬间的意义？"></a>如何反思你的生命瞬间的意义？</h3><p>书中介绍了“悼文练习”。这个练习的目的是让你反思你的生命瞬间的意义，确定一下你希望以何种方式被别人永远记住。你的生活中什么对你很重要？你对别人有何影响？你在这个世界上是如何发挥自己的作用的？这个练习要求你填一份表格，请务必确定即将在你的葬礼上宣读的悼文真的是你最想听到的。￼你难得有这样的机会给自己写悼文，所以一定要写对你来说最重要的事情。你以前的生活和工作有意义吗？现在假设别人给你写了悼文，别人写的悼文与你写的会有何不同？他们对你和你对别人的影响的看法会与你一样吗？别人会说你以前的生活工作有意义吗？</p>
+<h3 id="请开始填写下面的表格："><a href="#请开始填写下面的表格：" class="headerlink" title="请开始填写下面的表格："></a>请开始填写下面的表格：</h3><p>我们今天在这里相聚是为了与_____告别。世界非常需要_____的人，_______就是满足这一需要的最佳人选。<br>最有成就感的事情是_____，它发生在_____时候。<br>我相信_____来到这个世界上是为_____。<br>世界因为_____的存在而更加美好，我们会永远怀念他/她。</p>
+<h2 id="原则四、千万不要违心做事"><a href="#原则四、千万不要违心做事" class="headerlink" title="原则四、千万不要违心做事"></a>原则四、千万不要违心做事</h2><p>这个原则是让我们不用过度意向和过度反思。什么是过度意向？就是指把自己的意图强加给别人。什么是过度反思？就是指越担心什么事情，什么事情就会变成真的。过度意向和过度反思在很多情况下与疑病症十分相似。疑病症也称“疾病焦虑障碍”，是患者的一种臆想，认为自己患了一种重大的或者危及生命的，但还未确诊的病症。这些人可能本身并没有病，但生病的想法和由此引发的预期焦虑促使其最后真的生病了。</p>
+<p>书中介绍“矛盾意向法”来治疗这种臆想症状。比如：让恐惧症患者在短时间内说出他们真正恐惧的东西，虽然时间很短，但有些患者的恐惧感明显减少了，有些患者的恐惧感甚至完全消失了。他的原理是：通过夸大恐惧来克服恐惧。</p>
+<h2 id="原则五、从远处审视自己"><a href="#原则五、从远处审视自己" class="headerlink" title="原则五、从远处审视自己"></a>原则五、从远处审视自己</h2><p>如何从远处审视自己？作者说要自我分离。当我们把自己与自己分离，把自己与痛苦分开时，我们并没有减少或否认痛苦，而是超越了痛苦。我们不仅能看到、感觉到自己与痛苦的分离，而且还非常欣赏这一创举。我们接受了痛苦，同时也超越了痛苦。</p>
+<p>自我分离不是自我否定。自我分离是有意识的行为，而且具有明确的行动取向。我们明白自己的困境，选择的行为方式有助于我们与别人发展良好的人际关系。我们或许会与别人分担工作的重担，或许不会，但是我们知道工作意味着什么，知道自己在做什么。相比之下，否定通常意味着我们会忽视发生在自己身上或者别人身上的事情。换句话说，否定把我们与我们的经验以及经验带给我们的好处分开。我们在否定自己的经验时，同时我们也在否定别人的经验。因此，否定会导致关系中断，而自我分离却有助于建立联系，促进学习和成长。  </p>
+<h3 id="怎么样培养自我分离的技巧？"><a href="#怎么样培养自我分离的技巧？" class="headerlink" title="怎么样培养自我分离的技巧？"></a>怎么样培养自我分离的技巧？</h3><p>把自己想象成一个观察者，发挥自己的想象力，大胆勾画自己的生活蓝图。经验证明，这可以让自己沉浸在自己之外的一个角色中（就像演员那样）来培养自我分离能力。</p>
+<h2 id="原则六、改变你的关注焦点"><a href="#原则六、改变你的关注焦点" class="headerlink" title="原则六、改变你的关注焦点"></a>原则六、改变你的关注焦点</h2><p>这条原则要求我们别关注自己的体验上，而是把注意力转移到了其他事情上，其他更积极有益的事情上。<br>我们每个人天生就有很强的适应能力，不会把任何烦恼长时间记在心上。我们的注意力很短暂，兴趣广泛，无论做什么，都会全身心地投入。正常情况下，我们不会抱着某件事情不放，或者对错误念念不忘。相反，我们很快就会继续开始新的冒险。总有很多更有趣的事情等着我们去想去做。可是，长大以后，这种能力却似乎消失了。我们学会了深思熟虑，这种做法对我们当然很有裨益。但是，如果我们痴迷于思考，对负面消极的东西念念不忘，思考对我们就有害无益了。</p>
+<p>施行这个原则，我们可以选择把消极的思想和被动局面向积极主动转变。这样一来，我们就能重新成为自己思想情感的主人。重要的是，这种方法能最终消除我们生活中的紧张和冲突。如果转变注意力，我们就会对问题产生新的认识，我们会开始从他人的视角来看问题。请记住，对每一个问题，总有三个以上的不同观察视角。</p>
+<p>书中介绍“精神旅行练习”可以改变你关注的焦点。这个练习要求运用你的想象力，带你到别处体验精神旅行，从而让你对自己的生活和工作问题有新的创造性的认识。首先，写出你面临的一个挑战；然后罗列一些与你的挑战类似的状况。要充分发挥你的想象力，请记住，你试图要逃离困境，所以要确定那些不同的情况。</p>
+<p>这个填空练习可以引导你去发现那些情况：（我的问题处境是什么？）就像（类似的状况是什么？）。例如，（合并两家不同的机构面临的挑战）就像（结婚）。再次开动脑筋，发挥你的想象。列出所有结婚需要的步骤，完成这个挑战需要的一些步骤或许会为你提供借鉴，让你认识合并两个不同的公司需要采取的步骤。</p>
+<h2 id="原则七、要敢于超越自己"><a href="#原则七、要敢于超越自己" class="headerlink" title="原则七、要敢于超越自己"></a>原则七、要敢于超越自己</h2><p>超越自我的能力是人类另外一种独特品质。从根本上来说，人性就意味着关注自身之外的其他东西，并与之建立联系。</p>
+<p>弗兰克尔意识到自我超越过于抽象，于是就用人眼做了一个类比。在某种程度上，你的眼睛也有自我超越能力。请注意：眼睛之所以能感知周围世界，就是因为它看不到自己，眼睛只有在镜子里才能看到自己。当我的眼睛感知到某种与自己相似的东西，比如，看见了一束光的周围有绚丽多彩的光环，它就感知到自己患有青光眼。当看见了模糊图像，就能感知自己患有了白内障。但是健康正常的眼睛是根本看不到自己的。这种观察能力被破坏的程度与眼睛感知自身的程度有关。</p>
+<p>我们可以选择关注自我，某种程度上，也就是选择自私自利，或者我们可以走出自我，去服务别人。不管选择哪种做法，决定权都在我们自己。“一个人之所以为人，是因为他人的存在”。人类建立自己人性的方法，即要意识到他人人性的存在，并且要与之建立联系。事实上，通过超越自我，我们就能更好地挖掘和实现自我。因为生活有反射作用，我们与别人建立联系，我们就更能成就自我。</p>
+<h1 id="欢迎关注作者公众号"><a href="#欢迎关注作者公众号" class="headerlink" title="欢迎关注作者公众号"></a>欢迎关注作者公众号</h1><p><img src="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/dc16a93c.html" rel="prev" title="心理学实验之四服从权威实验">
+      <i class="fa fa-chevron-left"></i> 心理学实验之四服从权威实验
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/2c7b84db.html" rel="next" title="推荐一款Markdown排版微信排版工具">
+      推荐一款Markdown排版微信排版工具 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E4%B8%80%E3%80%81%E8%87%AA%E7%94%B1%E5%9C%B0%E9%80%89%E6%8B%A9%E4%BD%A0%E7%9A%84%E6%80%81%E5%BA%A6"><span class="nav-number">1.</span> <span class="nav-text">原则一、自由地选择你的态度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%82%A3%E4%B9%88%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81%E7%A7%AF%E6%9E%81%E4%B9%90%E8%A7%82%E7%9A%84%E6%80%81%E5%BA%A6%E5%91%A2%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">那么如何保持积极乐观的态度呢？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E4%BA%8C%E3%80%81%E5%AE%9E%E7%8E%B0%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E7%9B%AE%E6%A0%87"><span class="nav-number">2.</span> <span class="nav-text">原则二、实现有意义的目标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%8F%91%E7%8E%B0%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E7%9B%AE%E6%A0%87%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">如何发现有意义的目标？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E4%B8%89%E3%80%81%E5%8F%91%E7%8E%B0%E7%94%9F%E5%91%BD%E7%9E%AC%E9%97%B4%E7%9A%84%E6%84%8F%E4%B9%89"><span class="nav-number">3.</span> <span class="nav-text">原则三、发现生命瞬间的意义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%8F%91%E7%8E%B0%E7%94%9F%E5%91%BD%E7%9E%AC%E9%97%B4%E6%84%8F%E4%B9%89%EF%BC%9F"><span class="nav-number">3.1.</span> <span class="nav-text">如何发现生命瞬间意义？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%8F%8D%E6%80%9D%E4%BD%A0%E7%9A%84%E7%94%9F%E5%91%BD%E7%9E%AC%E9%97%B4%E7%9A%84%E6%84%8F%E4%B9%89%EF%BC%9F"><span class="nav-number">3.2.</span> <span class="nav-text">如何反思你的生命瞬间的意义？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E5%BC%80%E5%A7%8B%E5%A1%AB%E5%86%99%E4%B8%8B%E9%9D%A2%E7%9A%84%E8%A1%A8%E6%A0%BC%EF%BC%9A"><span class="nav-number">3.3.</span> <span class="nav-text">请开始填写下面的表格：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E5%9B%9B%E3%80%81%E5%8D%83%E4%B8%87%E4%B8%8D%E8%A6%81%E8%BF%9D%E5%BF%83%E5%81%9A%E4%BA%8B"><span class="nav-number">4.</span> <span class="nav-text">原则四、千万不要违心做事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E4%BA%94%E3%80%81%E4%BB%8E%E8%BF%9C%E5%A4%84%E5%AE%A1%E8%A7%86%E8%87%AA%E5%B7%B1"><span class="nav-number">5.</span> <span class="nav-text">原则五、从远处审视自己</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%8E%E4%B9%88%E6%A0%B7%E5%9F%B9%E5%85%BB%E8%87%AA%E6%88%91%E5%88%86%E7%A6%BB%E7%9A%84%E6%8A%80%E5%B7%A7%EF%BC%9F"><span class="nav-number">5.1.</span> <span class="nav-text">怎么样培养自我分离的技巧？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E5%85%AD%E3%80%81%E6%94%B9%E5%8F%98%E4%BD%A0%E7%9A%84%E5%85%B3%E6%B3%A8%E7%84%A6%E7%82%B9"><span class="nav-number">6.</span> <span class="nav-text">原则六、改变你的关注焦点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%88%99%E4%B8%83%E3%80%81%E8%A6%81%E6%95%A2%E4%BA%8E%E8%B6%85%E8%B6%8A%E8%87%AA%E5%B7%B1"><span class="nav-number">7.</span> <span class="nav-text">原则七、要敢于超越自己</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E4%BD%9C%E8%80%85%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="nav-number"></span> <span class="nav-text">欢迎关注作者公众号</span></a></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">熙文说</p>
+  <div class="site-description" itemprop="description">分享读书笔记,关注最新的编程技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">熙文说</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
