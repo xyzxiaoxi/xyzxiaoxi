@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="Yhf3CVhKl6Y42RMB">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xyzxiaoxi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="《人性的弱点》,字字珠玑，里面的思想观点值得我们反复思考练习。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人性的弱点">
+<meta property="og:url" content="https://xyzxiaoxi.github.io/posts/109e75d5.html">
+<meta property="og:site_name" content="熙文说">
+<meta property="og:description" content="《人性的弱点》,字字珠玑，里面的思想观点值得我们反复思考练习。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+<meta property="article:published_time" content="2021-01-29">
+<meta property="article:modified_time" content="2021-01-29">
+<meta property="article:author" content="熙文说">
+<meta property="article:tag" content="读书,编程,java,node,tars,serverless">
+<meta property="keywords" content="读书笔记,人性的弱点,熙文说">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg">
+
+<link rel="canonical" href="https://xyzxiaoxi.github.io/posts/109e75d5.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>人性的弱点 | 熙文说</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">熙文说</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个人的自言自语</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xyzxiaoxi.github.io/posts/109e75d5.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="熙文说">
+      <meta itemprop="description" content="分享读书笔记,关注最新的编程技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="熙文说">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          人性的弱点
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-29" itemprop="dateCreated datePublished" datetime="2021-01-29">2021-01-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">《人性的弱点》,字字珠玑，里面的思想观点值得我们反复思考练习。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>《人性的弱点》是美国戴尔·卡耐基编著的社会学著作，于 1936 年首次出版。这本书我不知道读了多少遍，每次读都觉得字字珠玑，里面的思想观点值得我们反复思考练习。</p>
+<p><strong>人际关系的基本技巧</strong></p>
+<ol>
+<li><strong>不要批评，不要指责，不要抱怨</strong><blockquote>
+<blockquote>
+<p>1.之九十九的情况下，不管犯下多严重的错误，人们都不会责备自己。<br>2.是无用的，它激起抵触，让人急于辩白；批评是危险的，它伤害自尊，甚至让人萌生恨意。<br>3.同回旋镖，总会伤及自身。被批评的人或是为自己辩护，以同样的指责回击。<br>4.若想激怒对方，你只需以激烈的批评作为武器；即使那批评合情合理，对方都可能会记恨终生。<br>5.和人打交道时，请牢记这一点——人并非理性生物。他们由情感驱使，被偏见支配，傲慢与虚荣是他们的动力之源。<br>6.批评、指责和抱怨是蠢材与生俱来的“才能”；理解和宽容却是对人品和自律的极大考验。<br>7.让我们以理解代替指责，设身处地去想一想对方缘何如此——这比简单的批评要有益得多，也有趣得多。同情、宽容和善意将会由此萌生。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>真心实意地感谢他人、赞美他人</strong><blockquote>
+<blockquote>
+<p>1.希望“感到自己重要”也是人与动物的最大分别之一。如果我们的祖先没有感受到人性的召唤，强烈渴求成就感，我们就不会有现今的文明。<br>2.我们注意孩童、家人和员工的营养，关心他们的健康，却忘记自尊同样需要营养和关心；我们烤牛肉和土豆为他人提供养分，却拒绝提供精神食粮，从未意识到赞许的话语将如同晨星一般，在他们的记忆中熠熠生辉，亘古不灭。<br>3.真挚的赞美能够改变人的一生。<br>4.那么赞美和奉承究竟有何分别？前者真诚，后者虚伪；前者无私，后者自私；前者发自肺腑，后者流于表面；前者为世人所歌颂，后者为世人所不齿。<br>5.赞许是在日常生活中最容易被人们忽视的美德。父母的关注与认可是孩子最渴求的，却总是被我们忽视。<br>6.与人打交道时请不要忘记，我们身边的每个人都是渴求认同的平凡人。普天之下的每一颗心，都会因他人的赞许而欢愉。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>激发他人的需求</strong><blockquote>
+<blockquote>
+<p>1.夏日里，我经常去缅因州钓鱼消遣。我个人非常喜欢草莓和奶油，不过我奇怪地发现，鱼类居然对这些人间美味不感兴趣，只喜欢吃虫子。所以每次去钓鱼的时候，我不会考虑自己想要什么，而是考虑鱼想要什么。我不会用草莓和奶油当诱饵，而是把挂着虫子或蚱蜢的鱼钩伸到它们面前摇晃，问它们：“想尝尝吗？”<br>2.为什么总把自己想要什么挂在嘴边呢？那是三岁小孩才做的事情，幼稚可笑。你当然在乎你想要的一切，这是人之常情，正常人永远都只在乎自己的欲望。然而其他人对你的欲求毫无兴趣，他们和你一样，只在意自己想要什么。<br>3.所以普天之下唯一能够影响他人的方式，就是找出他们想要什么，并且教给他们如何获得。<br>4.了解对方的需求，从而激发对方的兴趣，并不等同于操纵他人、损人利己。沟通的宗旨是双赢。</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<p><strong>赢得他人喜爱的六个方式</strong></p>
+<ol>
+<li><strong>建立对他人的兴趣，真心诚意地关注他人</strong><blockquote>
+<blockquote>
+<p>1.如何交友？为什么不向世界上朋友最多的高手学习？当他离你还有十英尺的时候，就欢快地摇起尾巴；如果你停下脚步摸摸他，他会高兴得上蹿下跳，让你知道他有多喜欢你。他没有任何动机——既不会向你推销房子，也不会要你的电话号码。他只是单纯地想对你示好，让你感受到他满溢的爱意。你大概知道，这种动物就是狗狗。<br>2.人们真正关心的只有自己，这一点永远不会变，无论今天还是明天，无论现在还是未来。<br>3.每个人都会对欣赏自己的人心生好感——不论工人、职员还是君主，无一例外。<br>4.想要得到友谊，就别怕麻烦，全心全意地为他人做些事情吧——哪怕要为此付出时间、精力、慷慨与体贴。<br>5.如果你想赢得他人的喜爱，从明天起，请热情洋溢地向周围人问好。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>微笑</strong><blockquote>
+<blockquote>
+<p>1.行胜于言。无需开口，你的笑容就已经替你说出“我喜欢你、你让我开心、很高兴见到你”<br>2.面带微笑的人在管理、教学和营销上能做出更大成绩，子女也更有幸福感。微笑比蹙眉传递的信息要丰富得多，因而在教学中，鼓励比惩罚有效。<br>3.人们往往认为感觉先于行为，但实际上，感觉与行为是同步的。相较于情绪，个人意志对行为的影响更为直接，只要调整行为，我们就能够间接地调整情绪。想要找回丢失的快乐，就请愉快地坐直身体，愉快地谈天或是做事，感觉快乐已经回到了你的身边。这是通向快乐的最佳途径……<br>4.世人都在寻找幸福，幸福之路也的确存在。学会控制自己的想法，就能够得到幸福。幸福并非取决于外在条件，而是取决于心理状态。<br>5.决定快乐与否的并不是你是谁、你在哪里或是你在做什么，而是你看待问题的方式<br>6.微笑传递着善意。当人们受够了生活中的忧愁、冷眼与漠视，你的微笑将如同透过云层的灿烂阳光，瞬间点亮对方的生活。每个人都面对着来自老板、客户、老师、家庭的重重压力与现实的种种不堪，而一个微笑就能够令彼此感受到世间的温情。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>无论对于何人，无论以何种语言，自己的名字都是世界上最甜蜜最重要的词汇</strong><blockquote>
+<blockquote>
+<p>1.每个人都希望自己的名字永垂不朽，为此付出任何代价都在所不惜。<br>2.几个世纪以来，贵族与富贾热衷于资助文艺创作者，是为了后者在作品上标明“谨献给 ××”。名门望族唯恐自己的名字在历史长河中烟消云散，因此图书馆和博物馆中的名贵藏品总是拜他们所赐。<br>3.只有尊重别人，才能赢得尊重。通过记住对方名字让对方感到被重视。<br>4.每个姓名都独立而完整地归属于特定的个体，而非其他任何人。名字令我们与众不同，成为独一无二的自己。沟通中一旦道出对方姓名，我们所传递的信息或是请求就增添了一层特别的色彩。无论同我们打交道的是服务生还是管理者，重视对方的名字都将带来不可思议的影响。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>专注地倾听，鼓励他人谈论自己</strong><blockquote>
+<blockquote>
+<p>1.商务会谈的成功秘诀是什么？哈佛前校长查尔斯·艾略特对此的回答是：“商务往来并无制胜之道可言，然而在对方说话的时候专注地倾听，是令对方解除戒备的最佳方式。”<br>2.在体贴耐心的倾听者面前，连牢骚满腹、吹毛求疵的人都会渐渐变得和善。当后者像眼镜王蛇一样嘶嘶地喷吐毒液，愤懑地抱怨的时候，前者总会温柔地以静默相对。<br>3.请记住，你的谈话对象并不关心你和你的问题，而对他们自己、他们的欲望和烦恼要感兴趣得多。他的牙疼远比异国饿殍遍地的饥荒更重要，他脖子上的疖子也远比非洲的四十次地震更让人心烦。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>谈论对方感兴趣的事情</strong><blockquote>
+<blockquote>
+<p>1.谈论对方最在乎的事情，是直抵对方内心深处的捷径。<br>2.谈论对方的兴趣能够带来双赢。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>真心实意地让对方知道他有多重要</strong><blockquote>
+<blockquote>
+<p>1.人类行为有一个核心法则。遵循这一法则，你将远离灾祸，得到良师益友和幸福安宁；触犯这一律法，困难就会接踵而至。那就是——令他人感到重要。<br>2.无论何事，你们愿意人怎样待你们，你们也要怎样待人。俗话说：将己之欲，施予他人。<br>3.“抱歉给您添麻烦了……”“劳驾您……”“能不能请您……”“您介不介意……”诸如此类的礼貌用语如同乏味生活的润滑剂，也是教养的体现。<br>4.每个人心里都认为他在某一方面比你强。走进他们内心的方式，是不动声色地让对方知道，你真心觉得他们很重要。<br>5.和对方谈谈他们自己，对方听上几个小时也不会厌倦。</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<p><strong>如何让他人想你之所想</strong></p>
+<ol>
+<li><strong>赢得争论的方法只有一个，那就是避免争论</strong><blockquote>
+<blockquote>
+<p>1.在大多数情况下，争论非但不会令双方和解，反而会火上浇油，令双方更加坚信自己言之有理。<br>2.辩论永无胜负。输即是输，赢亦是输。此话怎讲？不妨问问自己，即使你的辩论无懈可击，证明了对方漏洞百出、满口胡言，那又能怎样呢？你当然会自我感觉良好。但对方呢？你伤害了他的自尊，让他感到低人一等，并且对你的胜利忿忿不平。更重要的是，“即使对方被相悖的意见说服，他也并不会因此改变自己的想法”。<br>3.也许你总是对的，也许你总能驳倒别人，但是那又有什么意义呢。无论输赢，你都无法改变他人的想法。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>尊重他人的观点，绝不要说“你错了”</strong><blockquote>
+<blockquote>
+<p>1.如果你想指责别人，无需开口，你的表情、语调和手势就足以说明一切。当你指出对方的错误，他会认同吗？当然不会！你的批评否定了他们的智慧和判断力，打击了他们的骄傲和自尊。他们非但不会因此改变想法，反而只想回击。哪怕你抛出柏拉图或是康德的逻辑，你也无法扭转对方的观念，因为你已经伤害了他的感情。<br>2.如果有人说了错话，即使你确信他错了，也不妨试着这样说：“这个嘛，你看，我本来不是这样想的，但是估计是我错了。我常常犯错。如果真是我错了，我想赶快改正过来。让我们一起弄清事实吧。”<br>3.请不要与客户、爱人或是敌人争辩。不要直接指出他们的错误或激怒他们。请圆融处事。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>如果你错了，请坚决果断地承认错误</strong><blockquote>
+<blockquote>
+<p>1.当责骂在所难免时，与其从对方口中听到攻击的言辞，不如抢先认错——比起被他人的指责，自我批评要好受多了，不是吗？<br>2.在对方开口之前抢得先机，自己检讨，把对方想说的话说出来，不给他留任何余地。百分之九十九的情况下，等待你的将会是宽容和原谅。<br>3.勇于承认错误能够令人产生自豪感。认错不仅能够减轻自己的内疚和对方的防备，还能够弥补错误引发的后果。<br>4.如果你是对的，请以婉转友善的方式赢得对方的赞同。如果你是错的，那就果断诚恳地承认错误。这一举动不仅会产生惊人的效果，而且比辩白自己更有趣——不管你相不相信。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>沟通始于友善</strong><blockquote>
+<blockquote>
+<p>1.如果你想要得到他人的赞同，请先让他相信你是他忠实的伙伴，这是俘获他心灵的那一滴蜜糖；凭借这一滴蜜糖，你就能够赢得他的心。<br>2.太阳和风争论谁更强大，风说：“我更强。你看到那边那个穿着外套的老人没有？我打赌我能比你更快让他脱下外套。”于是太阳躲到云彩背后。风卖力地吹着，几乎要形成了龙卷风，但是风越大，老人把外套抓得越紧。风最终平息了，甘愿认输。太阳从云后冒出脑袋，笑眯眯地望着老人。渐渐地，老人紧皱的眉头舒展开了，脱下外套拿在手中。太阳对风说，温柔友善永远强于暴力。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>让对方点头称“是”</strong><blockquote>
+<blockquote>
+<p>1.与人商谈时，请先强调你赞同的观点，不要急于挑明分歧。如果可能的话，请让对方了解，你们的差异在于方法而非目的。<br>2.从一开始，就努力让对方说“是”，不要给他机会说“不”。<br>3.当人们坚决地说“不”的时候，他不仅仅只是说出了一个简单音节，而是从腺体、神经到肌肉都进入了“拒绝”模式，整个机体都紧绷起来。有时他可能会有短暂的反悔，但整个肌肉神经系统都进入了防御模式，阻止他自己食言。与之相反，人们称“是”的时候，就不会引发这样的神经活动，机体会进入活跃而开放的状态。因此，制胜之道取决于谈话之初的正面反馈。<br>4.想要反驳对方的时候，请记得苏格拉底的谋略，温和地抛出问题——一个答案为“是”的问题。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>让对方主导谈话</strong><blockquote>
+<blockquote>
+<p>1.再知心的朋友也更愿意在我们面前谈论他们的成就，而不是听我们自吹自擂。<br>2.法国哲学家拉·罗什富科曾言：“若想树敌，就胜于你的朋友；若想交友，请让朋友胜于你。”为什么呢？如果朋友胜过我们，他们会觉得自己很重要；如果我们胜过他们，他们中的一部分人会对此感到自卑，甚至心生妒忌。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>循循善诱，让对方自行得出结论</strong><blockquote>
+<blockquote>
+<p>1.较之别人灌输给你的想法，你是不是更相信自己得出的结论？如果答案是肯定的，为什么还要把自己的观点强加于人呢？循循善诱，让对方自己得出结论才是明智之举。<br>2.没有人喜欢强买强卖，也没有人愿意被迫完成任务。我们更喜欢自己做决定的感觉。我们喜欢被问及我们的心愿、我们的需求、我们的想法。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>抛开成见，将心比心</strong><blockquote>
+<blockquote>
+<p>1.请记住，即使对方错了，他也不会承认这一点。智者以理解代替指责。愿意这样做的人凤毛麟角，也因此出类拔萃。万事皆有因。任何想法和行为背后都有其缘由。一旦找出动机，对方的脾气秉性就尽在掌握之中。因此，请放下架子，设身处地地站在对方的角度思考问题。<br>2.认真问问自己：“如果我是他，我会怎么想，又会怎么做？”这会为你节省时间，避开不必要的麻烦，你的人际交往能力也会因此日益精进。<br>3.哈佛商学院院长多纳姆曾经说过：“面谈之前，我宁愿花两个小时站在门口，想清楚我要说什么，对方的兴趣如何、动机如何、会怎样回答，而不是贸然地冲进对方办公室。”</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>体谅他人的想法和愿望</strong><blockquote>
+<blockquote>
+<p>1.世间存在这样一个神奇的句式。它能够平息争执，消除猜忌，引发好感，并让对方侧耳倾听。想知道这句话吗？请听好——“我一点都不怪你这样想。如果我是你，我也会有完全相同的感受。”<br>2.在你一生遇到的人中，有四分之三的人都渴求他人的体谅。那就如他们所愿吧，他们会因此对你产生好感。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>激发对方内心深处的高尚情操</strong><blockquote>
+<blockquote>
+<p>1.每个人的行为背后都有两个原因——一个高尚的借口，和一个真正的动机。人们当然知道自己真正的动机，不需要你帮他们指出来。但是每个人的内心都会把自己高尚化，因而也需要一个听起来更高尚的动机。如果你想改变他人，请帮他们想出这个更高尚的理由。<br>2.如果我们对客户一无所知，就应当假定对方真诚正直、值得信赖、愿意尽其义务。换句话说，大部分人都是诚实的，也愿意尽早清偿应付的债务，例外之人是少数。并且我相信，哪怕是存心欺骗的人，一旦知道你认为他真诚正直，他们也不想辜负你的信任。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>戏剧化你的想法</strong><blockquote>
+<blockquote>
+<p>1.道出事实远远不够；你需要以生动、有趣、戏剧化的手段吸引受众。电影是这样做的，电视也是这样做的；如果想引起人们的关注，你也必须这样做。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>激将法</strong><blockquote>
+<blockquote>
+<p>1.超越他人的渴望！激将法！下战书！但凡对方有一点好胜心，这个方法绝对有效。<br>2.每位成功人士都热爱竞争，这是他们表现自我、证明自身价值、超越他人的方式。</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<p><strong>如何成为领导者</strong></p>
+<ol>
+<li><strong>欲抑先扬</strong><blockquote>
+<blockquote>
+<p>1.在说出令人不快的事情之前先给对方一些肯定，就更容易让对方接受。<br>2.称赞的话语如同牙医诊疗时的麻醉剂，虽然牙钻仍会令患者感到不适，但是麻醉剂能够有效地缓解疼痛。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>间接地引起对方的注意</strong><blockquote>
+<blockquote>
+<p>1.有的时候，一个词就能够决定成败。只要换掉这个简单的词汇，你就能潜移默化地改变他人。许多人在表达意见的时候习惯以称赞开始，以“但是”转折，以批评收尾。例如，约翰尼的父母想要改变孩子学习上的粗心大意时，大概会这样说：“约翰尼，我们真心为你这学期的进步感到骄傲。但是如果你能在代数上再用功一点的话，成绩肯定会比现在更好。”在这个例子里，约翰尼在听到“但是”之前，会觉得备受鼓舞；然而那个“但是”改变了他的想法，令他觉得前面的夸奖敷衍了事，只是在为之后的批评做铺垫而已。这种措辞方式降低了整句话的可信性，也无益于纠正约翰尼的学习态度。一旦把“但是”换为“而且”，问题就迎刃而解了：“约翰尼，我们真心为你这学期的进步感到骄傲。而且，要是下学期你继续保持这种认真细心的态度，你的代数成绩一定会和其他科目一样好。”</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>批评对方之前，先谈谈你自己的过错</strong><blockquote>
+<blockquote>
+<p>1.假如别人在批评你之前先承认自己也有诸多缺点，批评的话语就没有那么刺耳了。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>以引导代替命令</strong><blockquote>
+<blockquote>
+<p>1.以建议代替命令。这一技巧很容易让人改正错误。因其保护了对方的自尊心，让对方感到备受重视，所以能够得到配合而不引发逆反心理。即使出发点是好的，颐指气使的命令也会令人怀恨在心。<br>2.将命令改为问句不仅听起来更悦耳，还能够激发创造力。如果对方参与了决策过程，他就更乐于付诸实施。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>给对方留足面子</strong><blockquote>
+<blockquote>
+<p>1.给对方留面子——这一点至关重要，却往往被我们置于脑后。我们践踏他人的感受，横冲直撞，一意孤行；我们在他人面前训斥孩子或是下属，随心所欲，毫不留情。我们从未顾及对他们自尊心造成的伤害，而这些伤害原本只需要几分钟的思考或是几句贴心的话语就能够轻易化解。<br>2.即使你手握真理，对方大错特错，也请给对方留个面子。让对方丢脸除了会摧毁他的自尊心之外，别无益处。传奇的法国航空先锋兼作家安托万·德·圣埃克苏佩里曾写道：“我没有权利做出任何让对方感到自卑的言行。我怎么看他并不重要，重要的是他如何看自己。伤害别人的自尊是一种罪过。”</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>夸奖他人每一点微小的进步，“由衷地赞许，不吝啬赞美之词”</strong><blockquote>
+<blockquote>
+<p>1.当我们想要改变他人的时候，为什么不用奖励代替惩罚？为什么不用称赞代替责骂？哪怕他人只取得了一点微不足道的进步，也请真诚地表达你的赞赏，这些话语会成为他们前进的动力。<br>2.赞许的话语如同抚慰人心的温煦日光，灵魂缺少它的滋养就无法像花朵般盛放。然而大多数人对于同胞只有寒风般凛冽的责难，从不愿给予些许阳光般和暖的夸奖。<br>3.以表扬代替批评是伯尔赫斯·弗雷德里克·斯金纳奉行的基本教育理念。这位当代著名心理学家通过实验证明，如果将批评降至最低限度而着重强调表扬，人们的善举会被巩固，不良行径因为未被关注会逐渐弱化。<br>4.很多父母惯用的沟通方式是对孩子们大吼大叫。事实证明责骂的后果是孩子们越来越叛逆，绝非变得更优秀——家长亦是如此。亲子之间的鸿沟似乎变成了无解课题。<br>5.潜能如同花蕾，在批评中枯萎，为赞许而盛放</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>用美誉激励他人，他就会努力不辜负你的期望</strong><blockquote>
+<blockquote>
+<p>1.如果你希望对方提高某方面的能力，就请装作他早已拥有这一品质。不妨相信对方已经具备你所期望的美德，并且把你的信念传递给对方，对方定会竭尽全力维护他在你心目中的形象。<br>2.俗话说：“给狗安个坏名声，就如同把它送上绝路。”不妨将好名声赠予他人，然后看看由此带来的改变。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>鼓励对方勇于改变，让改正错误听起来轻而易举</strong><blockquote>
+<blockquote>
+<p>1.如果你对孩子、爱人或是员工说他在某件事上笨手笨脚、没有天赋、毫无可取之处，你会毁了他们进步的动力；如果你采用相反的方式，充分鼓励他，指出这件事对他来说易如反掌，告诉他你充分相信他的能力或者说他一定有潜能做成这件事，那么他一定会为此竭尽全力。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>让对方乐于为你做事</strong><blockquote>
+<blockquote>
+<p>1.如果想改变对方的态度或行为，领导者须将下述建议谨记在心：1.实事求是。做不到的事情请不要承诺。忘记自己的私利，关注对方的利益；2.目的明确。清楚知道你希望对方做什么；3.有同理心。扪心自问什么是对方真正的需求；4.换位思考。想一想对方帮你做事能得到哪些好处；5.利益交换。找到上述好处与对方需求的结合点；6.表明态度。提出请求的时候，向对方说明他如何能从中受益。<br>2.如果你觉得这些方法能够万无一失，那你就太天真了。不过大多数人的经验证明，使用这些方法确实能够有效地改变他人的态度。哪怕成功率只提高了百分之十，那也意味着你比从前进步了百分之十——这是你自己从中获得的好处。</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<p><strong>幸福家庭生活的七个法则</strong></p>
+<ol>
+<li><strong>别唠叨了</strong></li>
+<li><strong>不要试图改变对方</strong><blockquote>
+<blockquote>
+<p>1.婚姻的第一课，是学会尊重对方独有的生活之道。当然，不干涉对方并不等同于放弃自我。<br>2.婚姻的真谛不仅在于找到合适的对象，更在于当一个称职的对象。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>请勿责难</strong></li>
+<li><strong>真心诚意地欣赏对方</strong><blockquote>
+<blockquote>
+<p>1.不要羞于让对方知道她对你有多重要。<br>2.法国上层社会的男孩子从小就被教导要懂得赞美女士的帽子和套裙，而且一天之中要称赞若干次。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>细微之处见真情</strong><blockquote>
+<blockquote>
+<p>1.从古至今，花都是爱情的象征。当季的花既便宜又不难买到，街角往往有花童在减价叫卖。然而男人买花的概率却如此之低，仿佛每朵花都是价格昂贵的空谷幽兰，或是阿尔卑斯山悬崖上罕见的薄雪草。为什么非要等到妻子生病住院你才愿意买几朵花给她？为什么不立刻买一束玫瑰回家？<br>2.是时候让一些新的‘坏习惯’走进美国家庭了——比如在床上用早餐。这一消遣大概会让大部分女人沉溺其中，给女人带来的满足感不亚于私人会所给男人的满足感。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>谦和有礼</strong><blockquote>
+<blockquote>
+<p>1.那些刻薄伤人、极尽侮辱之能事的话语往往来自我们的家人。这一真相令人震惊，然而事实的确如此。<br>2.谦逊之于婚姻，正如燃料之于发动机一般重要。<br>3.悲伤一人承受就已足够，无需让家人一同忧心分神。<br>4.男人婚姻成功的概率远大于事业成功的概率。在零售领域创业的男人中，有百分之七十以失败告终。而走进婚姻殿堂的男女之中，有百分之七十堪称成功。<br>5.尽管男人认为一个心满意足的妻子和一个快乐安宁的家庭远胜于百万美元，但是百分之九十九的男人都不会严肃地考量这个问题，也不会把婚姻当作事业一样认真经营。他在人生中最重要的这件事上听天由命，婚姻的成败全凭运气。对女人来说，温存的话语远胜过粗暴的命令，让她们不解的是为什么丈夫从不对此上心。<br>6.男人知道几句好话就能让妻子无怨无悔地做任何事，夸几句持家有方、内助之贤就能让妻子为他的事业节衣缩食。男人也明白只要称赞妻子去年的连衣裙漂亮可爱，妻子就绝不会多瞧一眼新一季的巴黎新款。男人也懂得轻吻妻子的眼睛就会使她盲目，深吻她的嘴唇就能令她缄口。<br>7.女人早已把这些弱点毫无保留地教给了丈夫，却不知道男人为何仍然无动于衷。男人宁愿和她吵嘴打架、吃难以下咽的饭菜惩罚自己、给她买服饰和豪车，也不愿意以她渴望的方式取悦讨好她，对此女人实在不知道该生气还是放弃。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><strong>本解析婚姻中性事的好书</strong><blockquote>
+<blockquote>
+<p>1.失败的婚姻通常由四个原因导致，按重要性排序如下：1.性生活失调；2.对于闲暇时光该如何度过的想法不同；3.经济困难；4.身体、精神或情感状况异常。</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<h1 id="欢迎关注作者公众号"><a href="#欢迎关注作者公众号" class="headerlink" title="欢迎关注作者公众号"></a>欢迎关注作者公众号</h1><p><img src="https://gitee.com/xyzxiaoxi/picture/raw/master/2021-1-7/1610018774805-qrcode_for_gh_c467e04f3857_258.jpg"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/99c154e0.html" rel="prev" title="CODING初探">
+      <i class="fa fa-chevron-left"></i> CODING初探
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E4%BD%9C%E8%80%85%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">欢迎关注作者公众号</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">熙文说</p>
+  <div class="site-description" itemprop="description">分享读书笔记,关注最新的编程技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">熙文说</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
